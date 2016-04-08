@@ -11,6 +11,9 @@ RUN apt-get update -y
 RUN apt-get upgrade -y
 RUN apt-get install -y iperf iptraf
 
+#Before install vestacp
+#apt-get purge exim4*
+
 RUN touch /root/test
 RUN echo Good >> /root/test
 
